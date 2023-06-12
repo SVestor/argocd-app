@@ -10,7 +10,7 @@ spec:
   
   source:
     repoURL: https://github.com/SVestor/kbot.git
-    targetRevision: HEAD 
+    targetRevision: develop
     path: helm
   destination:
     server: https://kubernetes.default.svc 
