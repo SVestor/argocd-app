@@ -1,18 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kbot
+  name: apps-dev
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   
   source:
-    repoURL: https://github.com/SVestor/kbot.git
+    repoURL: https://github.com/SVestor/argocd-app.git
     targetRevision: HEAD 
     path: helm
   destination:
     server: https://kubernetes.default.svc 
-    namespace: dev
+    namespace: development
 
   syncPolicy:
     syncOptions:

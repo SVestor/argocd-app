@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: kbot
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   
@@ -12,7 +14,7 @@ spec:
     path: helm
   destination:
     server: https://kubernetes.default.svc 
-    namespace: dev
+    namespace: development
 
   syncPolicy:
     syncOptions:
