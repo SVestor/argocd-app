@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: argo-projects
   
   source:
     repoURL: https://github.com/SVestor/argocd-app.git
