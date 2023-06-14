@@ -16,7 +16,7 @@ spec:
       releaseName: kbot
   destination:
     server: https://kubernetes.default.svc 
-    namespace: devkbot
+    namespace: kbot-develop
 
   syncPolicy:
     syncOptions:
