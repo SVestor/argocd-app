@@ -9,7 +9,6 @@ spec:
   project: default
   
   source:
-    chart: kbot
     repoURL: https://github.com/SVestor/kbot.git
     targetRevision: develop
     path: helm
@@ -17,7 +16,7 @@ spec:
       releaseName: kbot
   destination:
     server: https://kubernetes.default.svc 
-    namespace: development
+    namespace: devkbot
 
   syncPolicy:
     syncOptions:
