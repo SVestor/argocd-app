@@ -11,9 +11,9 @@ spec:
   source:
     repoURL: https://github.com/SVestor/kbot.git
     targetRevision: develop
-    path: helm
     helm:
       releaseName: kbot
+    path: helm
   destination:
     server: https://kubernetes.default.svc 
     namespace: kbot-develop
