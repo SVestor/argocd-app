@@ -26,6 +26,4 @@ spec:
   helm:
     releases:
       - name: kbot
-        chart: .
-        values:
-          - .      
+             
